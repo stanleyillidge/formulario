@@ -376,16 +376,16 @@ class _FormScreenState extends State<FormScreen> {
           // Encabezado fijo con imagen, progreso, botones y mensaje de preguntas pendientes
           Container(
             color: Colors.white,
-            child: Column(
+            child: Wrap(
               children: [
                 SizedBox(
                   width: double.infinity,
-                  height: 200,
+                  height: 100,
                   child: Padding(
                     padding: const EdgeInsets.all(18.0),
                     child: Image.asset(
                       'imagenes/logoUCAGS2021.png', // Verifica que la imagen esté en assets y declarada en pubspec.yaml
-                      fit: BoxFit.fill,
+                      // fit: BoxFit.fitWidth,
                     ),
                   ),
                 ),
